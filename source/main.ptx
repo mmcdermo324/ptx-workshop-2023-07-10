@@ -18,9 +18,9 @@
     <frontmatter xml:id="frontmatter">
       <titlepage>
         <author>
-          <personname>You</personname>
-          <department>Your department</department>
-          <institution>Your institution</institution>
+          <personname>Moira McDermott</personname>
+          <department>Mathematics Department</department>
+          <institution>Syracuse University</institution>
         </author>
         <date>
           <today />
@@ -51,9 +51,38 @@
 
       <section xml:id="section-title">
         <title>Section title</title>
-        <p>Hello</p>
+        <p>Hello world.</p>
+
+       <definition xml:id="def-first-def">
+        <statement>
+          <p>
+            An example of <term>math</term> is <m>\sin^2x</m>
+          </p>
+          
+        </statement>
+       </definition>
+
+       <p>
+            As we saw in <xref ref="def-first-def"/>, math is cool.
+          </p>
+
+          <figure xml:id="myfig">
+          <caption>A tikz image</caption>
+          <image width="25%">
+            <description>An example image</description>
+            <latex-image>
+              \begin{tikzpicture}
+                \draw (0,0) rectangle (1,1);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
       </section>
 
+     <section xml:id="sec-second-section">
+      <title>Second Section</title>
+      
+     </section> 
     </chapter>
 
     <backmatter xml:id="backmatter">
